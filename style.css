@@ -22,7 +22,7 @@
 }
 
 *::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
   background-color: #f5f5f5;
 }
 
@@ -61,11 +61,11 @@ body {
   width: 100%;
   transition: top 0.3s ease;
   z-index: 1000; /* Ensure it stays above other content */
-  background-color: #e91e63;
+  background-color: aqua;
 }
 
 .scrolled {
-  background-color: #e91e628d;
+  background-color: rgba(0, 255, 255, 0.314);
 }
 .navbar .brand {
   font-family: inherit;
@@ -345,9 +345,30 @@ input:checked + .slide-container .nav label {
   display: block;
 }
 
-.mm {
+.Hero-Main-Text {
   position: absolute;
   z-index: 1 !important;
+  left: 10vw;
+  top: 20vh;
+  color: #f5f5f7;
+  font-size: 7rem;
+}
+.Hero-Secondary-Text {
+  position: absolute;
+  z-index: 1 !important;
+  left: 10vw;
+  top: 40vh;
+  font-size: 4rem;
+  color: #f5f5f7;
+}
+
+.Hero-Tertiary-Text {
+  position: absolute;
+  z-index: 1 !important;
+  left: 10vw;
+  top: 52vh;
+  font-size: 2rem;
+  color: #f5f5f7;
 }
 
 /* Hero Slider */
@@ -461,4 +482,25 @@ ul {
 .main {
   height: 300vh;
   background-color: #e91e63;
+}
+
+#upButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 9px 12px 9px 12px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+#upButton:hover {
+  background-color: #333;
 }
