@@ -54,3 +54,16 @@ upButton.onclick = function () {
 };
 
 // Go To Top Button End
+
+// hero automatic slider begin
+let currentSlide = 1;
+const totalSlides = 3;
+
+function autoScroll() {
+  currentSlide = (currentSlide % totalSlides) + 1;
+  document.getElementById(`img-${currentSlide}`).checked = true;
+}
+
+// Change slide every 5 seconds (5000 milliseconds)
+setInterval(autoScroll, 5000);
+// hero automatic slider end
