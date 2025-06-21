@@ -1,6 +1,15 @@
 // Navbar Script Begin
 let lastScrollTop = 0;
 const navbar = document.querySelector(".navbar");
+const navCheckbox = document.getElementById("nav");
+const menuItems = document.querySelectorAll(".menu-item a");
+
+// Add click event listeners to all menu items
+menuItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    navCheckbox.checked = false; // Close the mobile menu
+  });
+});
 
 window.addEventListener("scroll", () => {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;

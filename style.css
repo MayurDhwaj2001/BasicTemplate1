@@ -110,6 +110,7 @@ body {
     opacity: 0;
     background: #f1f5f8;
     transition: all 0.3s ease;
+    pointer-events: none;
   }
   .navbar .wrapper .menu {
     display: flex;
@@ -198,6 +199,7 @@ body {
   .navbar #nav:checked ~ .wrapper {
     z-index: 99;
     opacity: 1;
+    pointer-events: all;
   }
   .navbar #nav:checked ~ .wrapper .menu-item a {
     opacity: 1;
